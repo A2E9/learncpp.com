@@ -19,72 +19,45 @@
     <Filter Include="Resource Files\BlackJack">
       <UniqueIdentifier>{8ce84179-a11b-4ee1-bcc4-f7d686d6b07f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\examples">
-      <UniqueIdentifier>{537e21c4-9647-4496-9d55-50418f687fc3}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Project1Windows.cpp">
+    <ClCompile Include="learncpp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="io.h">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BlackJack\Card.cpp">
+      <Filter>Resource Files\BlackJack</Filter>
     </ClCompile>
-    <ClCompile Include="io.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BlackJack\Deck.cpp">
+      <Filter>Resource Files\BlackJack</Filter>
     </ClCompile>
-    <ClCompile Include="savedCode.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BlackJack\MainBlackJack.cpp">
+      <Filter>Resource Files\BlackJack</Filter>
     </ClCompile>
-    <ClCompile Include="Source.h">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Point3d.cpp">
+    <ClCompile Include="FriendClass\Point3d.cpp">
       <Filter>Resource Files\FriendClass</Filter>
     </ClCompile>
-    <ClCompile Include="Vector3d.cpp">
+    <ClCompile Include="FriendClass\Vector3d.cpp">
       <Filter>Resource Files\FriendClass</Filter>
-    </ClCompile>
-    <ClCompile Include="Card.cpp">
-      <Filter>Resource Files\BlackJack</Filter>
-    </ClCompile>
-    <ClCompile Include="Deck.cpp">
-      <Filter>Resource Files\BlackJack</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.h">
-      <Filter>Resource Files\BlackJack</Filter>
-    </ClCompile>
-    <ClCompile Include="MainBlackJack.cpp">
-      <Filter>Resource Files\BlackJack</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\L0\Desktop\color-console-master\examples\how.cpp">
-      <Filter>Resource Files\examples</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\L0\Desktop\color-console-master\examples\why.cpp">
-      <Filter>Resource Files\examples</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="constants.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Point3d.h">
-      <Filter>Resource Files\FriendClass</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector3d.h">
-      <Filter>Resource Files\FriendClass</Filter>
-    </ClInclude>
-    <ClInclude Include="Card.h">
+    <ClInclude Include="BlackJack\Card.h">
       <Filter>Resource Files\BlackJack</Filter>
     </ClInclude>
-    <ClInclude Include="Deck.h">
+    <ClInclude Include="BlackJack\Deck.h">
       <Filter>Resource Files\BlackJack</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\L0\Desktop\color-console-master\include\color.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="BlackJack\Player.h">
+      <Filter>Resource Files\BlackJack</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendClass\Point3d.h">
+      <Filter>Resource Files\FriendClass</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendClass\resource.h">
+      <Filter>Resource Files\FriendClass</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendClass\Vector3d.h">
+      <Filter>Resource Files\FriendClass</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

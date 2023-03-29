@@ -1,33 +1,32 @@
 ﻿//learn for loop
-/*
+
 int outer{ 1 };
+while (outer <= 5)
+{
+	// Row elements appear in descending order, so start from 5 and loop through to 1
+	int inner{ 5 };
 
-	while (outer <= 5)
+	while (inner >= 1)
 	{
-		// Row elements appear in descending order, so start from 5 and loop through to 1
-		int inner{ 5 };
+		// The first number in any row is the same as the row number
+		// So number should be printed only if it is <= the row number, space otherwise
+		if (inner <= outer)
+			std::cout << inner << ' '; // print the number and a single space
+		else
+			std::cout << "  "; // don't print a number, but print two spaces
 
-		while (inner >= 1)
-		{
-			// The first number in any row is the same as the row number
-			// So number should be printed only if it is <= the row number, space otherwise
-			if (inner <= outer)
-				std::cout << inner << ' '; // print the number and a single space
-			else
-				std::cout << "  "; // don't print a number, but print two spaces
-
-			--inner;
-		}
-
-		// A row has been printed, move to the next row
-		std::cout << '\n';
-
-		++outer;
+		--inner;
 	}
-*/
+
+	// A row has been printed, move to the next row
+	std::cout << '\n';
+
+	++outer;
+}
+
 
 //Logging
-/*
+
 #include <iostream>
 #include "io.h"
 
@@ -41,10 +40,9 @@ int main()
 	writeAnswer(readNumber() + readNumber());
 
 }
-*/
+
 
 //Gravity 
-/*
 
 void gravityFall(double  distanceToFall)
 {
@@ -70,10 +68,9 @@ void gravityFall(double  distanceToFall)
 	}
 }
 
-*/
 
 //Random
-/*
+
 	namespace Random
 {
 	std::mt19937 mt{ std::random_device{}() };
@@ -86,10 +83,8 @@ void gravityFall(double  distanceToFall)
 }
 
 
-*/
-
 //std::cin Input fix
-/*
+
 void ignoreLine()
 {
 	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -113,10 +108,9 @@ double getDouble()
 		}
 	}
 }
-*/
 
 //isPrime
-/*
+
 bool isPrime(int x)
 {
 	int temp{};
@@ -178,10 +172,8 @@ int main()
 	return 0;
 }
 
-*/
-
 //hiLo game
-/*
+
 #include <random>
 #include <limits> // for std::numeric_limits
 
@@ -285,10 +277,9 @@ void startGame(int min = 1, int max = 2)
 	}
 }
 
-*/
 
 //hiLo offi
-/*
+
 int getGuess(int count)
 {
 	while (true) // loop until user enters valid input
@@ -372,10 +363,8 @@ int main()
 	return 0;
 }
 
-*/
-
 //Struct Advertising
-/*
+
 #include <iostream>
 #include <string>
 
@@ -421,10 +410,9 @@ int main()
 
 	return 0;
 }
-*/
 
 //Struct Fraction
-/*
+
 struct Fraction
 {
 	int numerator{};
@@ -468,10 +456,9 @@ int main()
 	return 0;
 }
 
-*/
 
 //Moster Struct Enum
-/*
+
 #include <iostream>
 
 enum class Monster_type
@@ -523,11 +510,10 @@ int main()
 
 	return 0;
 }
-*/
 
-/**/
+
 //SelectionSort
-/*
+
 #include <iostream>
 #include <iterator> // for std::size
 
@@ -563,10 +549,9 @@ int main()
 
 	return 0;
 }
-*/
 
 //Bubble Sort v1
-/*
+
 for (int iteration = 0; iteration <= length; iteration++)
 	{
 
@@ -595,10 +580,10 @@ for (int iteration = 0; iteration <= length; iteration++)
 
 	}
 
-*/
+
 
 //Bubble Sort v1.2
-/*
+
 #include <iostream>
 
 int main()
@@ -637,10 +622,10 @@ int main()
 
 
 
-*/
+
 
 //Array ptr arithmetics
-/*
+
 #include <iterator> // for std::size
 
 bool isVowel(char ch)
@@ -682,10 +667,8 @@ int main()
 }
 
 
-*/
-
 //std::find self
-/*
+
 int* find(int* a, int* b, int c)
 {
 	for (; a != b; ++a)
@@ -699,10 +682,10 @@ int* find(int* a, int* b, int c)
 		}
 	}
 }
-*/
+
 
 //std::array countItems self
-/*
+
 enum  Item
 {
 	health_potions,
@@ -737,10 +720,8 @@ int main()
 }
 
 
-*/
-
 //std::array countItems 
-/*
+
 #include <array>
 #include <numeric>
 
@@ -768,10 +749,10 @@ int main()
 
 	std::cout << player[Item::torches];
 }
-*/
+
 
 //std::vector Students
-/*
+
 
 struct Student
 {
@@ -830,20 +811,17 @@ int main()
 		std::cout <<"\nGrade: " << students[i].grade;
 	}
 }
-*/
 
 //swapNum
-/*
+
 void swapNum(int& a, int& b)
 {
 	a = a + b;
 	b = a - b;
 	a = a - b;
 }
-*/
 
 //CStyle string
-/*
 void printCStyle(const char* string)
 {
 	while (*string != '\0')
@@ -854,10 +832,8 @@ void printCStyle(const char* string)
 	}
 }
 
-*/
 
 //template std::string
-/*
 template <typename T, std::size_t length>
 void printArray(std::array<T,length> s)
 {
@@ -867,10 +843,7 @@ void printArray(std::array<T,length> s)
 	}
 }
 
-*/
-
 //BlackJack my //player stand fix
-/*
 #include <iostream>
 #include <iterator> // for std::size
 #include <algorithm>
@@ -1090,10 +1063,8 @@ int main()
 
 	return 0;
 }
-*/
-
 //BlackJack official
-/*
+
 #include <algorithm> // std::shuffle
 #include <array>
 #include <cassert>
@@ -1362,194 +1333,184 @@ int main()
 	}
 
 	return 0;
-}
-*/
 
-//std::function Calc
-/*
+	//std::function Calc
 #include <iostream>
 #include <functional>
 
-int input()
-{
-	std::cout << "Input: ";
-	int first{ };
-	std::cin >> first;
-
-	return first;
-}
-
-char mathOP()
-{
-
-	char op{};
-	do
+	int input()
 	{
-		std::cout << "Operation: ";
-		std::cin >> op;
+		std::cout << "Input: ";
+		int first{ };
+		std::cin >> first;
 
-	} while (op != '+' && op != '-' && op != '*' &&  op != '/');
+		return first;
+	}
 
-	return op;
-}
-
-int add(int x, int y)
-{
-	return x + y;
-}
-int subtract(int x, int y)
-{
-	return x - y;
-}
-int multiply(int x, int y)
-{
-	return x * y;
-}
-int division(int x, int y)
-{
-	return x / y;
-}
-
-using ArithmeticFunction = std::function<int(int, int)>;
-
-ArithmeticFunction getArithmeticFunction(char op)
-{
-	switch (op)
+	char mathOP()
 	{
+
+		char op{};
+		do
+		{
+			std::cout << "Operation: ";
+			std::cin >> op;
+
+		} while (op != '+' && op != '-' && op != '*' && op != '/');
+
+		return op;
+	}
+
+	int add(int x, int y)
+	{
+		return x + y;
+	}
+	int subtract(int x, int y)
+	{
+		return x - y;
+	}
+	int multiply(int x, int y)
+	{
+		return x * y;
+	}
+	int division(int x, int y)
+	{
+		return x / y;
+	}
+
+	using ArithmeticFunction = std::function<int(int, int)>;
+
+	ArithmeticFunction getArithmeticFunction(char op)
+	{
+		switch (op)
+		{
 		case '+': return &add;
 		case '-': return &subtract;
 		case '*': return &multiply;
 		case '/': return &division;
-	}
-	return nullptr;
-}
-
-int main()
-{
-	int first{ input() };
-	char op{ mathOP() };
-	int second{ input() };
-
-	ArithmeticFunction fcn{ getArithmeticFunction(op) };
-
-	std::cout << first << " " << op << " "<<second<< " = " << fcn(first, second);
-}
-*/
-
-//rek.Factorial
-/*
-int factorial(int count)
-{
-	if (count <= 1)
-	{
-		return 1;
-	} else
-	{
-		return factorial(count - 1) * count;
-	}
-}
-
-
-int main()
-{
-	for (int count{ 0 }; count < 7; ++count)
-		std::cout << factorial(count) << ' ';
-
-	return 0;
-}
-*/
-
-//rek.SumUp (to solve)
-/*
-* 
-* 
-* 
-* Write a recursive function that takes an integer as input and returns the sum of each individual digit in the integer (e.g. 357 = 3 + 5 + 7 = 15). Print the answer for input 93427 (which is 25). Assume the input values are positive.
-int func(int x)
-{
-	if (x < 10)
-	{
-		return x;
-	} else
-	{
-		return func(x/10) + x%10;
-	}
-}
-
-int main()
-{
-	std::cout << func(934);
-	return 0;
-}
-*/
-
-//rek.PrintBinary (to solve)
-/*
-3a) This one is slightly trickier. Write a program that asks the user to enter a positive integer, and then uses a recursive function to print out the binary representation for that number. Use method 1 from lesson O.4 -- Converting between binary and decimal.
-
-Hint: Using method 1, we want to print the bits from the “bottom up”, which means in reverse order. This means your print statement should be after the recursive call.
-
-
-* 
-void printBinary(int x)
-{
-	// Termination case
-	if (x == 0)
-		return;
-
-	// Recurse to the next bit
-	printBinary(x / 2);
-
-	// Print out the remainders (in reverse order)
-	std::cout << x % 2;
-}
-
-int main()
-{
-	int x;
-	std::cout << "Enter a positive integer: ";
-	std::cin >> x;
-
-	printBinary(x);
-}
-*/
-
-//rek.NegPrintBinary (to solve)
-/*
-3b) Update your code from 3a to handle the case where the user may enter 0 or a negative number.
-
-Here’s a sample output (assuming 32-bit integers):
-
-Enter an integer: -15
-11111111111111111111111111110001
-
-Hint: You can turn a negative integer into a positive one by converting it to an unsigned integer. These have identical bit representations (the type is used to determine how to interpret the number into decimal).
-
-
-void printBinary(unsigned int n)
-{
-	if (n > 1) // we only recurse if n > 1, so this is our termination case for n == 0
-	{
-		printBinary(n / 2);
+		}
+		return nullptr;
 	}
 
-	std::cout << n % 2;
-}
+	int main()
+	{
+		int first{ input() };
+		char op{ mathOP() };
+		int second{ input() };
 
-int main()
-{
-	int x{};
-	std::cout << "Enter an integer: ";
-	std::cin >> x;
+		ArithmeticFunction fcn{ getArithmeticFunction(op) };
 
-	printBinary(static_cast<unsigned int>(x));
-}
+		std::cout << first << " " << op << " " << second << " = " << fcn(first, second);
+	}
 
-*/
+	//rek.Factorial
 
-//3 Lamdas
-/*
-double(*addNumbers1)(double, double)
+	int factorial(int count)
+	{
+		if (count <= 1)
+		{
+			return 1;
+		} else
+		{
+			return factorial(count - 1) * count;
+		}
+	}
+
+
+	int main()
+	{
+		for (int count{ 0 }; count < 7; ++count)
+			std::cout << factorial(count) << ' ';
+
+		return 0;
+	}
+	//rek.SumUp (to solve)
+	//Write a recursive function that takes an integer as input and returns the sum of each individual digit in the integer (e.g. 357 = 3 + 5 + 7 = 15). Print the answer for input 93427 (which is 25). Assume the input values are positive.
+	int func(int x)
+	{
+		if (x < 10)
+		{
+			return x;
+		} else
+		{
+			return func(x / 10) + x % 10;
+		}
+	}
+
+	int main()
+	{
+		std::cout << func(934);
+		return 0;
+	}
+
+
+	//rek.PrintBinary (to solve)
+
+	//3a) This one is slightly trickier. Write a program that asks the user to enter a positive integer, and then uses a recursive function to print out the binary representation for that number. Use method 1 from lesson O.4 -- Converting between binary and decimal.
+
+	//Hint: Using method 1, we want to print the bits from the “bottom up”, which means in reverse order. This means your print statement should be after the recursive call.
+
+
+
+	void printBinary(int x)
+	{
+		// Termination case
+		if (x == 0)
+			return;
+
+		// Recurse to the next bit
+		printBinary(x / 2);
+
+		// Print out the remainders (in reverse order)
+		std::cout << x % 2;
+	}
+
+	int main()
+	{
+		int x;
+		std::cout << "Enter a positive integer: ";
+		std::cin >> x;
+
+		printBinary(x);
+	}
+
+
+	//rek.NegPrintBinary (to solve)
+
+	//3b) Update your code from 3a to handle the case where the user may enter 0 or a negative number.
+
+	//Here’s a sample output (assuming 32-bit integers):
+
+	//Enter an integer: -15
+	//11111111111111111111111111110001
+
+	//Hint: You can turn a negative integer into a positive one by converting it to an unsigned integer. These have identical bit representations (the type is used to determine how to interpret the number into decimal).
+
+
+	void printBinary(unsigned int n)
+	{
+		if (n > 1) // we only recurse if n > 1, so this is our termination case for n == 0
+		{
+			printBinary(n / 2);
+		}
+
+		std::cout << n % 2;
+	}
+
+	int main()
+	{
+		int x{};
+		std::cout << "Enter an integer: ";
+		std::cin >> x;
+
+		printBinary(static_cast<unsigned int>(x));
+	}
+
+	*/
+
+		//3 Lamdas
+
+		double(*addNumbers1)(double, double)
 	{
 		[](double a, double b)
 		{
@@ -1578,10 +1539,9 @@ double(*addNumbers1)(double, double)
 	};
 	addNumbers3(2, 3);
 
-*/
 
 //Lambda Struct Array
-/*
+
 #include <algorithm>
 #include <array>
 #include <iostream>
@@ -1620,10 +1580,8 @@ int main()
 
 	return 0;
 }
-*/
 
 //SquareGame
-/*
 #include <algorithm>
 #include <cmath>
 #include <ctime>
@@ -1771,10 +1729,8 @@ int main()
 
 	return 0;
 }
-*/
 
 //BinarySearch array
-/*
 #include <iostream>
 #include <iterator>
 #include <cmath>
@@ -1870,12 +1826,7 @@ int main()
 	return 0;
 }
 
-
-
-*/
-
 //Stack Class
-/*
 class Stack
 {
 private:
@@ -1919,10 +1870,7 @@ public:
 };
 
 
-*/
-
 //Member List Initialization
-/*
 class RGBA
 {
 	using type = std::uint8_t;
@@ -1936,10 +1884,7 @@ public:
 	void print() {std::cout << (int)m_red << "\n" << (int)m_green << "\n" << (int)m_blue << "\n" << (int)m_alpha << "\n";}
 };
 
-*/
-
 //Calc Class
-/*
 class Calc
 {
 private:
@@ -1952,11 +1897,8 @@ public:
 	//calc.add(2).mult(2).subs(2);
 };
 
-*/
 
-///////////////////
 //Timing code
-/*
 #include <chrono> // for std::chrono functions
 #include <cstddef> // for std::size_t
 #include <iostream>
@@ -1990,10 +1932,9 @@ int main()
 	std::cout << t.elapsed();
 	return 0;
 }
-*/
+
 
 //random monster generator 
-/*
 #include <iostream>
 #include <array>
 
@@ -2084,7 +2025,6 @@ int main()
 
 	return 0;
 }
-*/
 
 //MOD ASCII
 /*

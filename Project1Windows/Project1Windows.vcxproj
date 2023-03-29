@@ -149,28 +149,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\L0\Desktop\color-console-master\examples\how.cpp" />
-    <ClCompile Include="C:\Users\L0\Desktop\color-console-master\examples\why.cpp" />
-    <ClCompile Include="Card.cpp" />
-    <ClCompile Include="Deck.cpp" />
-    <ClCompile Include="MainBlackJack.cpp" />
-    <ClCompile Include="Player.h" />
-    <ClCompile Include="Point3d.cpp" />
-    <ClCompile Include="Project1Windows.cpp" />
-    <ClCompile Include="io.h" />
-    <ClCompile Include="io.cpp" />
-    <ClCompile Include="savedCode.cpp" />
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Source.h" />
-    <ClCompile Include="Vector3d.cpp" />
+    <ClCompile Include="BlackJack\Card.cpp" />
+    <ClCompile Include="BlackJack\Deck.cpp" />
+    <ClCompile Include="BlackJack\MainBlackJack.cpp" />
+    <ClCompile Include="FriendClass\Point3d.cpp" />
+    <ClCompile Include="FriendClass\Vector3d.cpp" />
+    <ClCompile Include="learncpp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\L0\Desktop\color-console-master\include\color.hpp" />
-    <ClInclude Include="Card.h" />
-    <ClInclude Include="constants.h" />
-    <ClInclude Include="Deck.h" />
-    <ClInclude Include="Point3d.h" />
-    <ClInclude Include="Vector3d.h" />
+    <ClInclude Include="BlackJack\Card.h" />
+    <ClInclude Include="BlackJack\Deck.h" />
+    <ClInclude Include="BlackJack\Player.h" />
+    <ClInclude Include="FriendClass\Point3d.h" />
+    <ClInclude Include="FriendClass\resource.h" />
+    <ClInclude Include="FriendClass\Vector3d.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
